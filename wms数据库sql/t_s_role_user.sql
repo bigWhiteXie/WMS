@@ -1,0 +1,55 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : mysql
+ Source Server Type    : MySQL
+ Source Server Version : 80031
+ Source Host           : localhost:3306
+ Source Schema         : wms
+
+ Target Server Type    : MySQL
+ Target Server Version : 80031
+ File Encoding         : 65001
+
+ Date: 12/04/2023 16:20:03
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for t_s_role_user
+-- ----------------------------
+DROP TABLE IF EXISTS `t_s_role_user`;
+CREATE TABLE `t_s_role_user`  (
+  `ID` varchar(32) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL COMMENT 'ID',
+  `roleid` varchar(32) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL COMMENT '角色ID',
+  `userid` varchar(32) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL COMMENT '用户ID',
+  PRIMARY KEY (`ID`) USING BTREE,
+  INDEX `FK_n2ucxeorvpjy7qhnmuem01kbx`(`roleid` ASC) USING BTREE,
+  INDEX `FK_d4qb5xld2pfb0bkjx9iwtolda`(`userid` ASC) USING BTREE,
+  CONSTRAINT `t_s_role_user_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `t_s_user` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `t_s_role_user_ibfk_2` FOREIGN KEY (`roleid`) REFERENCES `t_s_role` (`ID`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci COMMENT = 'InnoDB free: 599040 kB; (`userid`) REFER `jeecg/t_s_user`(`i' ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of t_s_role_user
+-- ----------------------------
+INSERT INTO `t_s_role_user` VALUES ('2c9221a4715dbbff017173299b8301ce', '8a8ab0b246dc81120146dc8181870050', '8a8ab0b246dc81120146dc8181a10054');
+INSERT INTO `t_s_role_user` VALUES ('2c9221a4715dbbff01717329cc6301d1', '402880e74d75c4dd014d75d3c5f40001', '4028ef81563ae5be01563ae92d7f0002');
+INSERT INTO `t_s_role_user` VALUES ('2c9221a4715dbbff01717334dc4501d7', '402880e74d75c4dd014d75d3c5f40001', '402881875988e889015988ec36770001');
+INSERT INTO `t_s_role_user` VALUES ('2c9221a4717bb44c01717d01c7140542', '8a8ab0b246dc81120146dc8181870050', '2c9221a4717bb44c01717d01c6ff0540');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172e01178830059', '2c9221a4717bb44c01717ce20ca00411', '4028804072de5db40172e011787a0057');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172e011788d005a', '2c9221a4717bb44c01717ced1eb70425', '4028804072de5db40172e011787a0057');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172e0117897005b', '2c9221a4717bb44c01717cf9cc2a04e6', '4028804072de5db40172e011787a0057');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172e01178a0005c', '4028804072de5db40172df63e359001d', '4028804072de5db40172e011787a0057');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172e1a606f60067', '2c9221a4717bb44c01717ce20ca00411', '4028804072de5db40172e1a606e30065');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172e1a607620068', '2c9221a4717bb44c01717ced1eb70425', '4028804072de5db40172e1a606e30065');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172e1a607620069', '2c9221a4717bb44c01717cf9cc2a04e6', '4028804072de5db40172e1a606e30065');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172e1a6076b006a', '4028804072de5db40172df63e359001d', '4028804072de5db40172e1a606e30065');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172e1a6076b006b', '8a8ab0b246dc81120146dc8181870050', '4028804072de5db40172e1a606e30065');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172e40d45ff0076', '8a8ab0b246dc81120146dc8181870050', '4028804072de5db40172e40d45930074');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40172ff898d37008e', '8a8ab0b246dc81120146dc8181870050', '4028804072de5db40172ff898d1a008c');
+INSERT INTO `t_s_role_user` VALUES ('4028804072de5db40174a91fe457015f', '4028804072de5db40172df63e359001d', '4028804072de5db40174a91fe409015d');
+
+SET FOREIGN_KEY_CHECKS = 1;
