@@ -11,6 +11,7 @@
         <module>wms-auth</module>
         <module>wms-auth-base</module>
         <module>Test-Project</module>
+        <module>wms-common</module>
     </modules>
 
     <packaging>pom</packaging>

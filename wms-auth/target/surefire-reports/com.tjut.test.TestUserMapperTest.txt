@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.tjut.test.TestUserMapperTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
+com.tjut.test.TestUserMapperTest.testCourseTest()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.tjut.test.TestUserMapperTest.testCourseTest(TestUserMapperTest.java:28)
+

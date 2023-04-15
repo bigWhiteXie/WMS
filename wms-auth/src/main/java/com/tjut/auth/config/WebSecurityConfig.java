@@ -1,5 +1,6 @@
 package com.tjut.auth.config;
 
+import com.tjut.auth.service.impl.TSUserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -25,32 +26,28 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 @EnableGlobalMethodSecurity(securedEnabled = true,prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+//    @Autowired
+//    DaoAuthenticationProviderCustom daoAuthenticationProviderCustom;
+
     @Autowired
-    DaoAuthenticationProviderCustom daoAuthenticationProviderCustom;
-
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        //添加自定义的Provider到provider列表中
-        auth.authenticationProvider(daoAuthenticationProviderCustom);
-
-    }
+    TSUserServiceImpl tsUserService;
+//    @Override
+//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+//        //添加自定义的Provider到provider列表中
+//        auth.authenticationProvider(daoAuthenticationProviderCustom);
+//
+//    }
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
     //配置用户信息服务
-    @Bean
-    @Override
-    public UserDetailsService userDetailsService() {
-        //这里配置用户信息,这里暂时使用这种方式将用户存储在内存中
-        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-        //在内存创建zhangsan,密码123,分配权限p1
-        manager.createUser(User.withUsername("zhangsan").password("123").authorities("p1").build());
-        //在内存创建lisi,密码456,分配权限p2
-        manager.createUser(User.withUsername("lisi").password("456").authorities("p2").build());
-        return manager;
-    }
+//    @Bean
+//    @Override
+//    public UserDetailsService userDetailsService() {
+//        return tsUserService;
+//    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {

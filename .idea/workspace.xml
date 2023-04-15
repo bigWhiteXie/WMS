@@ -4,11 +4,174 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="" />
+    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="xielei,feat:初始化项目">
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2023-04-14T184136.400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSDepartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSDepartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSFunctionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSFunctionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSOperationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSOperationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSRoleFunctionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSRoleFunctionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSRoleUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSRoleUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSUserOrgMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSUserOrgMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/dto/FunctionPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/po/TSDepart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/po/TSFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/po/TSOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/po/TSRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/po/TSRoleFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/po/TSRoleUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/po/TSUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/po/TSUserOrg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/TSDepartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/TSFunctionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/TSOperationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/TSRoleFunctionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/TSRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/TSRoleUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/TSUserOrgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/TSUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSDepartServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSFunctionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSOperationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSRoleFunctionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSRoleUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSUserOrgServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/src/test/java/com/tjut/test/TestUserMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSDepartMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSDepartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSFunctionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSFunctionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSOperationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSOperationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSRoleFunctionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSRoleFunctionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSRoleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSRoleUserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSRoleUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSUserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSUserOrgMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSUserOrgMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/dto/FunctionPair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/dto/UserDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSDepart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSFunction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSRoleFunction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSRoleUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSUserOrg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/TSDepartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/TSFunctionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/TSOperationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/TSRoleFunctionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/TSRoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/TSRoleUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/TSUserOrgService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/TSUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSDepartServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSFunctionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSOperationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSRoleFunctionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSRoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSRoleUserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSUserOrgServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSUserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/surefire-reports/TEST-com.tjut.test.TestUserMapperTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/surefire-reports/com.tjut.test.TestUserMapperTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-auth/target/test-classes/com/tjut/test/TestUserMapperTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/auth/model/TSDepart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/auth/model/TSUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/auth/model/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/exception/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/exception/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/exception/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/exception/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/exception/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/exception/CommonError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/exception/RestErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/exception/ValidationGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/exception/WmsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/auth/model/TSDepart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/auth/model/TSUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/auth/model/UserDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/CommonError.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/RestErrorResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/ValidationGroups$Delete.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/ValidationGroups$Inster.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/ValidationGroups$Update.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/ValidationGroups.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/WmsException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/target/wms-common.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-common/wms-common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接口文档/image/2023-04-14-11-13-18-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接口文档/image/2023-04-14-11-14-00-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接口文档/image/2023-04-14-11-21-49-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接口文档/image/2023-04-14-14-12-56-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/接口文档/image/2023-04-14-15-11-18-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test-Project/src/main/java/com/tjut/test/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test-Project/src/main/java/com/tjut/test/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test-Project/target/classes/com/tjut/test/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Test-Project/target/classes/com/tjut/test/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-test/wms-auth.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-test/wms-auth.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/config/AuthorizationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/config/AuthorizationServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/config/DaoAuthenticationProviderCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/config/DaoAuthenticationProviderCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/config/AuthorizationServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/config/AuthorizationServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/config/DaoAuthenticationProviderCustom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/wms-auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/wms-auth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接口文档/登录相关接口文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/接口文档/登录相关接口文档.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -32,6 +195,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2OJTA7lCxZkJRpjrBBhEgwtClAu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,9 +207,10 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test-Project/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wms-common/src/main/java/com/tjut" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -53,10 +218,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut" />
+      <recent name="D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut\base\model" />
+      <recent name="D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth" />
       <recent name="D:\javaProject\Projects\wms-project\Test-Project\src\main\resources" />
       <recent name="D:\javaProject\Projects\wms-project\wms-auth-base\src\main\java\com\tjut\authBase\config" />
-      <recent name="D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\config" />
-      <recent name="D:\javaProject\Projects\wms-project\wms-auth\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\javaProject\Projects\wms-project\接口文档" />
@@ -70,7 +236,7 @@
       <recent name="com.tjut.auth.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TestApplication">
+  <component name="RunManager" selected="Spring Boot.AuthApplication">
     <configuration name="AuthApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tjut.auth.AuthApplication" />
       <module name="wms-auth" />
@@ -86,6 +252,22 @@
     </configuration>
     <configuration name="wms-auth | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/wms-auth.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="TestUserMapperTest.testCourseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wms-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tjut.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tjut.test" />
+      <option name="MAIN_CLASS_NAME" value="com.tjut.test.TestUserMapperTest" />
+      <option name="METHOD_NAME" value="testCourseTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="wms-auth" />
@@ -109,8 +291,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.TestApplication" />
         <item itemvalue="HTTP Request.wms-auth | #1" />
+        <item itemvalue="Spring Boot.TestApplication" />
+        <item itemvalue="JUnit.TestUserMapperTest.testCourseTest" />
         <item itemvalue="Application.AuthApplication" />
       </list>
     </recent_temporary>
@@ -125,12 +308,35 @@
       <updated>1681277540238</updated>
       <workItem from="1681277541492" duration="1664000" />
       <workItem from="1681279224113" duration="277000" />
-      <workItem from="1681279523681" duration="24174000" />
+      <workItem from="1681279523681" duration="35977000" />
     </task>
+    <task id="LOCAL-00001" summary="xielei,feat:初始化项目">
+      <created>1681459501785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681459501785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="xielei,feat:初始化项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="xielei,feat:初始化项目" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -139,6 +345,11 @@
           <url>jar://C:/maven-respority3.6.1/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/authentication/BearerTokenExtractor.class</url>
           <line>46</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSUserServiceImpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

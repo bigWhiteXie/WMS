@@ -17,12 +17,14 @@
         <module name="wms-auth" />
         <module name="Test-Project" />
         <module name="wms-auth-base" />
+        <module name="wms-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Test-Project" target="1.8" />
       <module name="wms-auth" target="1.8" />
       <module name="wms-auth-base" target="1.8" />
+      <module name="wms-common" target="1.8" />
       <module name="wms-project" target="1.8" />
     </bytecodeTargetLevel>
   </component>

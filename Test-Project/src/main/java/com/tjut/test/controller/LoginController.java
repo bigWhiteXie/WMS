@@ -29,17 +29,18 @@ public class LoginController {
     }
 
     @RequestMapping("/r/r1")
-    @PreAuthorize("hasAuthority('p1')")
     public String r1() {
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         Object details = SecurityContextHolder.getContext().getAuthentication().getDetails();
+        Object authority = SecurityContextHolder.getContext().getAuthentication().getAuthorities();
         log.info("principal:{}",principal);
         log.info("details:{}",details);
+        log.info("authorities:{}",authority);
         return "访问r1资源";
     }
 
     @RequestMapping("/r/r2")
-    @PreAuthorize("hasAuthority('p2')")
+
     public String r2() {
         return "访问r2资源";
     }
