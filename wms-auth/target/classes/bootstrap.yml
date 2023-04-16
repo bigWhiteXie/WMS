@@ -12,13 +12,10 @@ spring:
         group: wms-project
         file-extension: yaml
         refresh-enabled: true
-#        shared-configs:
-#          - data-id: swagger-${spring.profiles.active}.yaml
-#            group: xuecheng-plus-common
-#            refresh: true
-#          - data-id: logging-${spring.profiles.active}.yaml
-#            group: xuecheng-plus-common
-#            refresh: true
+        shared-configs:
+          - data-id: redis-${spring.profiles.active}.yaml
+            group: wms-project
+            refresh: true
 
   profiles:
     active: dev

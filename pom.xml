@@ -10,8 +10,9 @@
     <modules>
         <module>wms-auth</module>
         <module>wms-auth-base</module>
-        <module>Test-Project</module>
+        <module>wms-test-project</module>
         <module>wms-common</module>
+        <module>wms-gateway</module>
     </modules>
 
     <packaging>pom</packaging>

@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Test-Project/Test-Project.iml" filepath="$PROJECT_DIR$/Test-Project/Test-Project.iml" />
       <module fileurl="file://$PROJECT_DIR$/wms-auth/wms-auth.iml" filepath="$PROJECT_DIR$/wms-auth/wms-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/wms-auth-base/wms-auth-base.iml" filepath="$PROJECT_DIR$/wms-auth-base/wms-auth-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/wms-common/wms-common.iml" filepath="$PROJECT_DIR$/wms-common/wms-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wms-gateway/wms-gateway.iml" filepath="$PROJECT_DIR$/wms-gateway/wms-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/wms-project.iml" filepath="$PROJECT_DIR$/wms-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wms-test-project/wms-test-project.iml" filepath="$PROJECT_DIR$/wms-test-project/wms-test-project.iml" />
     </modules>
   </component>
 </project>

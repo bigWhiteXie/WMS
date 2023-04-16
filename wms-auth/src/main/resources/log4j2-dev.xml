@@ -40,7 +40,7 @@
         </logger>
         <logger name="org.mybatis" level="INFO">
         </logger>
-        <logger name="cn.itcast.wanxinp2p.consumer.mapper" level="DEBUG">
+        <logger name="com.tjut" level="DEBUG">
         </logger>
 
         <logger name="springfox" level="INFO">

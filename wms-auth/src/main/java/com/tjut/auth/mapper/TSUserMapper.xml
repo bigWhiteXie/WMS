@@ -31,7 +31,7 @@
         where u.id=#{userid}
     </select>
 
-    <select id="getFunctionByRoleId" resultType="com.tjut.auth.model.po.TSFunction">
+    <select id="getFunctionByIds" resultType="com.tjut.auth.model.po.TSFunction">
         select f.* from t_s_function f
         where f.id in
         <foreach collection="list" open="(" separator="," close=")" item="item">

@@ -17,5 +17,5 @@ import java.util.List;
 public interface TSUserMapper extends BaseMapper<TSUser> {
     List<String> getFunIds(@Param("userid") String userid);
 
-    List<TSFunction> getFunctionByRoleId(@Param("list") List<String> list);
+    List<TSFunction> getFunctionByIds(@Param("list") List<String> list);
 }
