@@ -4,44 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="xielei,docs、feat:完善UserHolder，更新接口文档">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_httpclient_10_10_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/controller/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/dto/MenuDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/resp/WmsResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/FeignConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/controller/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/feignclients/AuthServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/feignclients/AuthServiceClientFallbackFactory.java" afterDir="false" />
+    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="xielei,feat:完成菜单列表的获取">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSFunctionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSFunctionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSFunctionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSFunctionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/TSUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/TSUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/TSUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/TSUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/target/surefire-reports/TEST-com.tjut.test.TestUserMapperTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/target/surefire-reports/com.tjut.test.TestUserMapperTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-common/target/wms-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/wms-common.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/GatewayAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/GatewayAuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-gateway/target/classes/com/tjut/gateway/GatewayApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-gateway/target/classes/com/tjut/gateway/config/GatewayAuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/target/classes/com/tjut/gateway/config/GatewayAuthFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-gateway/target/classes/security-whitelist.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/target/classes/security-whitelist.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-gateway/wms-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/wms-gateway.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-test-project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-test-project/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-test-project/wms-test-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-test-project/wms-test-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSFunctionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSFunctionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSFunctionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSFunctionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/接口文档/登录相关接口文档.md" beforeDir="false" afterPath="$PROJECT_DIR$/接口文档/登录相关接口文档.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +96,7 @@
       <recent name="com.tjut.auth" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="wms-auth | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/wms-auth.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -230,7 +197,7 @@
       <workItem from="1681279224113" duration="277000" />
       <workItem from="1681279523681" duration="53391000" />
       <workItem from="1681697646837" duration="1875000" />
-      <workItem from="1681713558807" duration="13158000" />
+      <workItem from="1681713558807" duration="14071000" />
     </task>
     <task id="LOCAL-00001" summary="xielei,feat:初始化项目">
       <created>1681459501785</created>
@@ -253,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681638597468</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="xielei,feat:完成菜单列表的获取">
+      <created>1681731150016</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681731150016</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +249,8 @@
     <MESSAGE value="xielei,docs:修复接口文档图片不显示的问题" />
     <MESSAGE value="xielei,feat、docs:完成登录认证功能并修复接口文档图片不显示的问题" />
     <MESSAGE value="xielei,docs、feat:完善UserHolder，更新接口文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="xielei,docs、feat:完善UserHolder，更新接口文档" />
+    <MESSAGE value="xielei,feat:完成菜单列表的获取" />
+    <option name="LAST_COMMIT_MESSAGE" value="xielei,feat:完成菜单列表的获取" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

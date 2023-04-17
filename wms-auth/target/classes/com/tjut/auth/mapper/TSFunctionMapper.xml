@@ -28,4 +28,57 @@
         ID, functioniframe, functionlevel, functionname, functionorder, functionurl, parentfunctionid, iconid, desk_iconid, functiontype, function_icon_style, create_by, create_name, update_by, update_date, create_date, update_name
     </sql>
 
+    <select id="getMenuTree" resultMap="MenuTreeMap">
+        select t1.ID                p_id,
+               t1.functionlevel     p_flevel,
+               t1.functionname      p_fname,
+               t1.functionorder     p_forder,
+               t1.functionurl       p_furl,
+               t1.parentfunctionid  p_pid,
+               t1.iconid            p_iconid,
+               t1.desk_iconid       p_desk_iconid,
+               t1.functiontype      p_ftype,
+               t2.ID                s_id,
+               t2.functionlevel     s_flevel,
+               t2.functionname      s_fname,
+               t2.functionorder     s_forder,
+               t2.functionurl       s_furl,
+               t2.parentfunctionid  s_pid,
+               t2.iconid            s_iconid,
+               t2.desk_iconid       s_desk_iconid,
+               t2.functiontype      s_ftype
+        from t_s_function t1
+                 left join t_s_function t2 on t2.parentfunctionid = t1.ID
+        where t1.functionlevel = 0 and t1.ID IN
+        <foreach collection="list" open="(" separator="," close=")" item="item">
+            #{item}
+        </foreach>
+        order by t1.functionorder,t2.functionorder
+    </select>
+
+    <resultMap id="MenuTreeMap" type="com.tjut.auth.model.dto.MenuDto">
+        <result column="p_id" property="id"></result>
+        <result column="p_flevel"  property="functionlevel"></result>
+        <result column="p_fname" property="functionname"></result>
+        <result column="p_forder" property="functionorder"></result>
+        <result column="p_furl" property="functionurl"></result>
+        <result column="p_pid" property="parentfunctionid"></result>
+        <result column="p_iconid" property="iconid"></result>
+        <result column="p_desk_iconid" property="deskIconid"></result>
+        <result column="p_ftype" property="functiontype"></result>
+
+        <collection property="childNodes" javaType="com.tjut.auth.model.dto.MenuDto">
+            <result column="s_id" property="id"></result>
+            <result column="s_flevel" property="functionlevel"></result>
+            <result column="s_fname" property="functionname"></result>
+            <result column="s_forder" property="functionorder"></result>
+            <result column="s_furl" property="functionurl"></result>
+            <result column="s_pid" property="parentfunctionid"></result>
+            <result column="s_iconid" property="iconid"></result>
+            <result column="s_desk_iconid" property="deskIconid"></result>
+            <result column="s_ftype" property="functiontype"></result>
+        </collection>
+    </resultMap>
+
+
 </mapper>
