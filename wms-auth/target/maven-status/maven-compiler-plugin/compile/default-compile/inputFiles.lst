@@ -29,6 +29,7 @@ D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\mapper\
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\service\impl\TSRoleUserServiceImpl.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\service\TSUserService.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\model\po\TSDepart.java
+D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\config\JwtLogoutSuccessHandler.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\config\TokenConfig.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\service\impl\TSRoleFunctionServiceImpl.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\config\DaoAuthenticationProviderCustom.java

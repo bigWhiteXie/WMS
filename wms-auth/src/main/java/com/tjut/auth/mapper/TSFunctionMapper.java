@@ -1,7 +1,11 @@
 package com.tjut.auth.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.tjut.auth.model.dto.MenuDto;
 import com.tjut.auth.model.po.TSFunction;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * <p>
@@ -11,5 +15,6 @@ import com.tjut.auth.model.po.TSFunction;
  * @author codeXie
  */
 public interface TSFunctionMapper extends BaseMapper<TSFunction> {
+    List<MenuDto> getMenuTree(@Param("list") List<String> list);
 
 }

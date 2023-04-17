@@ -2,6 +2,7 @@ package com.tjut.gateway.config;
 
 import com.alibaba.fastjson.JSON;
 import com.tjut.auth.model.UserDto;
+
 import com.tjut.redis.RedisKey;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
@@ -100,6 +101,7 @@ public class GatewayAuthFilter implements GlobalFilter, Ordered {
             if(redisTemplate.opsForSet().isMember(RedisKey.MENU_URL,uri) && !redisTemplate.opsForSet().isMember(RedisKey.USER_MENUS+userDto.getUserId(),uri)){
                 return buildReturnMono("无权访问该url",exchange);
             }
+
             return chain.filter(exchange);
         } catch (InvalidTokenException e) {
             log.info("认证令牌无效: {}", token);
