@@ -7,6 +7,7 @@ D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\model\p
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\service\TSRoleUserService.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\config\SwaggerConfig.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\mapper\TSRoleMapper.java
+D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\model\dto\MenuDto.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\model\dto\UserDto.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\model\po\TSUser.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\config\MybatisPlusConfig.java
@@ -23,6 +24,7 @@ D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\service
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\service\TSRoleFunctionService.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\service\TSUserOrgService.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\service\impl\TSDepartServiceImpl.java
+D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\controller\MenuController.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\mapper\TSDepartMapper.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\mapper\TSOperationMapper.java
 D:\javaProject\Projects\wms-project\wms-auth\src\main\java\com\tjut\auth\mapper\TSRoleFunctionMapper.java

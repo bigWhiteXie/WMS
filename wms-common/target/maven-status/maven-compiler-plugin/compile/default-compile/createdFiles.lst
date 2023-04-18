@@ -8,4 +8,5 @@ com\tjut\auth\model\TSUser.class
 com\tjut\exception\RestErrorResponse.class
 com\tjut\redis\RedisKey.class
 com\tjut\exception\ValidationGroups$Inster.class
+com\tjut\resp\WmsResp.class
 com\tjut\auth\model\TSDepart.class

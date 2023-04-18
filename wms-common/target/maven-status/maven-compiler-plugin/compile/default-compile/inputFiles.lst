@@ -2,6 +2,7 @@ D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut\exception\
 D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut\exception\WmsException.java
 D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut\auth\model\TSUser.java
 D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut\redis\RedisKey.java
+D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut\resp\WmsResp.java
 D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut\auth\model\TSDepart.java
 D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut\exception\ValidationGroups.java
 D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut\auth\model\UserDto.java
