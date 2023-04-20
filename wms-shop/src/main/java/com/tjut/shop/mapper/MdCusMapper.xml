@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tjut.shop.mapper.MdCusMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tjut.shop.model.po.MdCus">
+        <id column="id" property="id" />
+        <result column="create_name" property="createName" />
+        <result column="create_by" property="createBy" />
+        <result column="create_date" property="createDate" />
+        <result column="update_name" property="updateName" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_date" property="updateDate" />
+        <result column="sys_org_code" property="sysOrgCode" />
+        <result column="sys_company_code" property="sysCompanyCode" />
+        <result column="zhong_wen_qch" property="zhongWenQch" />
+        <result column="zhu_ji_ma" property="zhuJiMa" />
+        <result column="ke_hu_jian_cheng" property="keHuJianCheng" />
+        <result column="ke_hu_bian_ma" property="keHuBianMa" />
+        <result column="ke_hu_ying_wen" property="keHuYingWen" />
+        <result column="zeng_yong_qi" property="zengYongQi" />
+        <result column="zeng_yong_qi_ye" property="zengYongQiYe" />
+        <result column="ke_hu_zhuang_tai" property="keHuZhuangTai" />
+        <result column="xing_ye_fen_lei" property="xingYeFenLei" />
+        <result column="ke_hu_deng_ji" property="keHuDengJi" />
+        <result column="suo_shu_xing_ye" property="suoShuXingYe" />
+        <result column="shou_qian_ri_qi" property="shouQianRiQi" />
+        <result column="zhong_zhi_he_shi_jian" property="zhongZhiHeShiJian" />
+        <result column="shen_qing_shi_jian" property="shenQingShiJian" />
+        <result column="ke_hu_shu_xing" property="keHuShuXing" />
+        <result column="gui_shu_zu_zh" property="guiShuZuZh" />
+        <result column="gui_shu_sheng" property="guiShuSheng" />
+        <result column="gui_shu_shi_dai" property="guiShuShiDai" />
+        <result column="gui_shu" property="guiShu" />
+        <result column="di_zhi" property="diZhi" />
+        <result column="you_zheng_bian_ma" property="youZhengBianMa" />
+        <result column="zhu_lian_xi_ren" property="zhuLianXiRen" />
+        <result column="dian_hua" property="dianHua" />
+        <result column="shou_ji" property="shouJi" />
+        <result column="chuan_zhen" property="chuanZhen" />
+        <result column="Emaildi_zhi" property="emaildiZhi" />
+        <result column="wang_ye_di_zhi" property="wangYeDiZhi" />
+        <result column="fa_ren_dai_biao" property="faRenDaiBiao" />
+        <result column="fa_ren_shen_fen" property="faRenShenFen" />
+        <result column="zhu_ce_zi_jin" property="zhuCeZiJin" />
+        <result column="bi_bie" property="biBie" />
+        <result column="ying_ye_zhi_zhao" property="yingYeZhiZhao" />
+        <result column="shui_wu_deng" property="shuiWuDeng" />
+        <result column="zu_zhi_ji_gou" property="zuZhiJiGou" />
+        <result column="dao_lu_yun_shu" property="daoLuYunShu" />
+        <result column="zhu_ying_ye_wu" property="zhuYingYeWu" />
+        <result column="he_yi_xiang" property="heYiXiang" />
+        <result column="pi_zhun_ji_guan" property="piZhunJiGuan" />
+        <result column="pi_zhun_wen_hao" property="piZhunWenHao" />
+        <result column="zhu_ce_ri_qi" property="zhuCeRiQi" />
+        <result column="bei_zhu" property="beiZhu" />
+        <result column="zhu_lian_xi_ren1" property="zhuLianXiRen1" />
+        <result column="dian_hua1" property="dianHua1" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, create_name, create_by, create_date, update_name, update_by, update_date, sys_org_code, sys_company_code, zhong_wen_qch, zhu_ji_ma, ke_hu_jian_cheng, ke_hu_bian_ma, ke_hu_ying_wen, zeng_yong_qi, zeng_yong_qi_ye, ke_hu_zhuang_tai, xing_ye_fen_lei, ke_hu_deng_ji, suo_shu_xing_ye, shou_qian_ri_qi, zhong_zhi_he_shi_jian, shen_qing_shi_jian, ke_hu_shu_xing, gui_shu_zu_zh, gui_shu_sheng, gui_shu_shi_dai, gui_shu, di_zhi, you_zheng_bian_ma, zhu_lian_xi_ren, dian_hua, shou_ji, chuan_zhen, Emaildi_zhi, wang_ye_di_zhi, fa_ren_dai_biao, fa_ren_shen_fen, zhu_ce_zi_jin, bi_bie, ying_ye_zhi_zhao, shui_wu_deng, zu_zhi_ji_gou, dao_lu_yun_shu, zhu_ying_ye_wu, he_yi_xiang, pi_zhun_ji_guan, pi_zhun_wen_hao, zhu_ce_ri_qi, bei_zhu, zhu_lian_xi_ren1, dian_hua1
+    </sql>
+
+</mapper>

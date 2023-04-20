@@ -11,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/wms-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wms-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wms-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wms-shop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wms-shop/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wms-test-project/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wms-test-project/src/main/resources" charset="UTF-8" />
   </component>

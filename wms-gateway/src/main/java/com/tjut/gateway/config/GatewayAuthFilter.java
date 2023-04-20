@@ -68,6 +68,10 @@ public class GatewayAuthFilter implements GlobalFilter, Ordered {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String requestUrl = exchange.getRequest().getPath().value();
         AntPathMatcher pathMatcher = new AntPathMatcher();
+        String uri = exchange.getRequest().getURI().getPath();
+
+        log.info("uri:{}",uri);
+        log.info("url:{}",requestUrl);
         //白名单放行
         for (String url : whitelist) {
             if (pathMatcher.match(url, requestUrl)) {
@@ -90,7 +94,7 @@ public class GatewayAuthFilter implements GlobalFilter, Ordered {
             }
 
             //判断当前用户是否具备访问该url的权限
-            String uri = exchange.getRequest().getURI().getPath();
+
             Map<String, Object> map = oAuth2AccessToken.getAdditionalInformation();
             String json = (String) map.get("user_name");
             UserDto userDto = JSON.parseObject(json, UserDto.class);

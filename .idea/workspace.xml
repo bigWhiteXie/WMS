@@ -4,15 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="xielei,docs:接口文档新增彩带接口">
-      <change afterPath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/CorsConfig.java" afterDir="false" />
+    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="xielei,feat:在gateWay解决跨域问题">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/ShopApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/controller/MdCusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/controller/MdGoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/mapper/MdCusMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/mapper/MdCusMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/mapper/MdGoodsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/mapper/MdGoodsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/po/MdCus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/po/MdGoods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/vo/GoodParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/vo/PageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/MdCusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/MdGoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/impl/MdCusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/impl/MdGoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/resources/log4j2-dev.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/wms-shop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms数据库sql/md_cus.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms数据库sql/md_goods.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms数据库sql/主数据.ndm2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/resp/WmsResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/resp/WmsResp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wms-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wms-common/target/wms-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/wms-common.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/GatewayAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/GatewayAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-gateway/target/classes/com/tjut/gateway/config/GatewayAuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/target/classes/com/tjut/gateway/config/GatewayAuthFilter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +64,17 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/model/dto/MenuDto.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/SecurityConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/service/impl/TSUserServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSFunctionMapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/CorsConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wms数据库sql/md_goods.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/FeignConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSFunctionMapper.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/controller/MenuController.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -59,14 +97,16 @@
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wms-gateway/target/wms-gateway.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -78,13 +118,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javaProject\Projects\wms-project\wms-shop\src\main\java\com\tjut\shop" />
+      <recent name="D:\javaProject\Projects\wms-project\wms-shop\src\main\resources" />
+      <recent name="D:\javaProject\Projects\wms-project\wms数据库sql" />
       <recent name="D:\javaProject\Projects\wms-project\wms-gateway\src\main\java\com\tjut\gateway\config" />
       <recent name="D:\javaProject\Projects\wms-project\wms-gateway\src\main\resources" />
-      <recent name="D:\javaProject\Projects\wms-project\wms-auth" />
-      <recent name="D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut" />
-      <recent name="D:\javaProject\Projects\wms-project\wms-common\src\main\java\com\tjut\base\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\javaProject\Projects\wms-project\wms数据库sql" />
       <recent name="D:\javaProject\Projects\wms-project\接口文档\image" />
       <recent name="D:\javaProject\Projects\wms-project\wms-auth\src\main\resources" />
       <recent name="D:\javaProject\Projects\wms-project\接口文档" />
@@ -93,14 +134,14 @@
       <recent name="com.tjut" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tjut.shop.config" />
+      <recent name="com.tjut" />
       <recent name="com.tjut.gateway.config" />
       <recent name="com.tjut.gateway.feignclients" />
       <recent name="com.tjut.gateway" />
-      <recent name="com.tjut.test" />
-      <recent name="com.tjut.auth" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.ShopApplication">
     <configuration name="wms-auth | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/wms-auth.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -120,25 +161,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUserMapperTest.testCourseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="wms-auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tjut.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tjut.test" />
-      <option name="MAIN_CLASS_NAME" value="com.tjut.test.TestUserMapperTest" />
-      <option name="METHOD_NAME" value="testCourseTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tjut.auth.AuthApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="wms-auth" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tjut.auth.AuthApplication" />
+      <module name="wms-shop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tjut.shop.AuthApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,6 +184,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tjut.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="wms-shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tjut.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tjut.ShopApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ShopApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.TestApplication" />
         <item itemvalue="JUnit.TestUserMapperTest.insertUrl2Redis" />
         <item itemvalue="HTTP Request.wms-auth | #1" />
-        <item itemvalue="JUnit.TestUserMapperTest.testCourseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +247,9 @@
       <workItem from="1681279523681" duration="53391000" />
       <workItem from="1681697646837" duration="1875000" />
       <workItem from="1681713558807" duration="15871000" />
-      <workItem from="1681734818566" duration="6010000" />
+      <workItem from="1681734818566" duration="7722000" />
+      <workItem from="1681824111673" duration="1494000" />
+      <workItem from="1681975667947" duration="7422000" />
     </task>
     <task id="LOCAL-00001" summary="xielei,feat:初始化项目">
       <created>1681459501785</created>
@@ -239,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681731892175</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="xielei,feat:在gateWay解决跨域问题">
+      <created>1681799082019</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681799082019</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,16 +317,12 @@
     <MESSAGE value="xielei,docs、feat:完善UserHolder，更新接口文档" />
     <MESSAGE value="xielei,feat:完成菜单列表的获取" />
     <MESSAGE value="xielei,docs:接口文档新增彩带接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="xielei,docs:接口文档新增彩带接口" />
+    <MESSAGE value="xielei,feat:在gateWay解决跨域问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="xielei,feat:在gateWay解决跨域问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/GatewayAuthFilter.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/config/JwtLogoutSuccessHandler.java</url>
           <line>36</line>

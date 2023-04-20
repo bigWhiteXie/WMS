@@ -13,6 +13,7 @@
         <module>wms-test-project</module>
         <module>wms-common</module>
         <module>wms-gateway</module>
+        <module>wms-shop</module>
     </modules>
 
     <packaging>pom</packaging>

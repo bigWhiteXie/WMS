@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tjut.shop.mapper.MdGoodsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tjut.shop.model.po.MdGoods">
+        <id column="id" property="id" />
+        <result column="create_name" property="createName" />
+        <result column="create_by" property="createBy" />
+        <result column="create_date" property="createDate" />
+        <result column="update_name" property="updateName" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_date" property="updateDate" />
+        <result column="sys_org_code" property="sysOrgCode" />
+        <result column="sys_company_code" property="sysCompanyCode" />
+        <result column="suo_shu_ke_hu" property="suoShuKeHu" />
+        <result column="shp_ming_cheng" property="shpMingCheng" />
+        <result column="shp_jian_cheng" property="shpJianCheng" />
+        <result column="shp_bian_ma" property="shpBianMa" />
+        <result column="shp_xing_hao" property="shpXingHao" />
+        <result column="shp_gui_ge" property="shpGuiGe" />
+        <result column="shp_yan_se" property="shpYanSe" />
+        <result column="chp_shu_xing" property="chpShuXing" />
+        <result column="cf_wen_ceng" property="cfWenCeng" />
+        <result column="chl_kong_zhi" property="chlKongZhi" />
+        <result column="mp_dan_ceng" property="mpDanCeng" />
+        <result column="mp_ceng_gao" property="mpCengGao" />
+        <result column="jf_shp_lei" property="jfShpLei" />
+        <result column="shp_pin_pai" property="shpPinPai" />
+        <result column="shp_tiao_ma" property="shpTiaoMa" />
+        <result column="pp_tu_pian" property="ppTuPian" />
+        <result column="bzhi_qi" property="bzhiQi" />
+        <result column="shl_dan_wei" property="shlDanWei" />
+        <result column="jsh_dan_wei" property="jshDanWei" />
+        <result column="ti_ji_cm" property="tiJiCm" />
+        <result column="zhl_kg" property="zhlKg" />
+        <result column="chl_shl" property="chlShl" />
+        <result column="jti_ji_bi" property="jtiJiBi" />
+        <result column="jm_zhong_bi" property="jmZhongBi" />
+        <result column="jj_zhong_bi" property="jjZhongBi" />
+        <result column="chc_dan_wei" property="chcDanWei" />
+        <result column="ch_dan_pin" property="chDanPin" />
+        <result column="ku_dan_pin" property="kuDanPin" />
+        <result column="gao_dan_pin" property="gaoDanPin" />
+        <result column="ch_zh_xiang" property="chZhXiang" />
+        <result column="ku_zh_xiang" property="kuZhXiang" />
+        <result column="gao_zh_xiang" property="gaoZhXiang" />
+        <result column="shp_miao_shu" property="shpMiaoShu" />
+        <result column="zhuang_tai" property="zhuangTai" />
+        <result column="zhl_kgm" property="zhlKgm" />
+        <result column="SHP_BIAN_MAKH" property="shpBianMakh" />
+        <result column="JIZHUN_WENDU" property="jizhunWendu" />
+        <result column="yw_ming_cheng" property="ywMingCheng" />
+        <result column="rw_ming_cheng" property="rwMingCheng" />
+        <result column="cus_name" property="cusName" />
+        <result column="peisongdian" property="peisongdian" />
+        <result column="category_code" property="categoryCode" />
+        <result column="category_id" property="categoryId" />
+        <result column="min_stock" property="minStock" />
+        <result column="sku" property="sku" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, create_name, create_by, create_date, update_name, update_by, update_date, sys_org_code, sys_company_code, suo_shu_ke_hu, shp_ming_cheng, shp_jian_cheng, shp_bian_ma, shp_xing_hao, shp_gui_ge, shp_yan_se, chp_shu_xing, cf_wen_ceng, chl_kong_zhi, mp_dan_ceng, mp_ceng_gao, jf_shp_lei, shp_pin_pai, shp_tiao_ma, pp_tu_pian, bzhi_qi, shl_dan_wei, jsh_dan_wei, ti_ji_cm, zhl_kg, chl_shl, jti_ji_bi, jm_zhong_bi, jj_zhong_bi, chc_dan_wei, ch_dan_pin, ku_dan_pin, gao_dan_pin, ch_zh_xiang, ku_zh_xiang, gao_zh_xiang, shp_miao_shu, zhuang_tai, zhl_kgm, SHP_BIAN_MAKH, JIZHUN_WENDU, yw_ming_cheng, rw_ming_cheng, cus_name, peisongdian, category_code, category_id, min_stock, sku
+    </sql>
+
+</mapper>

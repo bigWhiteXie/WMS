@@ -20,6 +20,7 @@
         <module name="wms-gateway" />
         <module name="wms-auth-base" />
         <module name="wms-common" />
+        <module name="wms-shop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +29,7 @@
       <module name="wms-common" target="1.8" />
       <module name="wms-gateway" target="1.8" />
       <module name="wms-project" target="1.8" />
+      <module name="wms-shop" target="1.8" />
       <module name="wms-test-project" target="1.8" />
     </bytecodeTargetLevel>
   </component>

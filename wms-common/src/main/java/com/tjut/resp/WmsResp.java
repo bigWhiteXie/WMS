@@ -10,4 +10,12 @@ import lombok.NoArgsConstructor;
 public class WmsResp<T> {
     int code;
     T data;
+
+    public static  <R> WmsResp<R> success(R data){
+        return new WmsResp<R>(200,data);
+    }
+
+    public static  WmsResp<String> fail(int code,String info){
+        return new WmsResp<String>(500,info);
+    }
 }
