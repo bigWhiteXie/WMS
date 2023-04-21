@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MdGoodsController {
 
     @Autowired
-    private MdGoodsService  mdGoodsService;
+    private MdGoodsService mdGoodsService;
 
 
     @PostMapping("page")
