@@ -36,7 +36,7 @@ import java.util.List;
 public class MdGoodsController {
 
     @Autowired
-    private MdGoodsService  mdGoodsService;
+    private MdGoodsService mdGoodsService;
 
     @ApiOperation("分页查询商品信息")
     @PostMapping("page")
