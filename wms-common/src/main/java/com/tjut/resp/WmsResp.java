@@ -15,7 +15,7 @@ public class WmsResp<T> {
         return new WmsResp<R>(200,data);
     }
 
-    public static  WmsResp<String> fail(int code,String info){
+    public static  WmsResp<String> fail(String info){
         return new WmsResp<String>(500,info);
     }
 }

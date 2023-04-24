@@ -6,6 +6,9 @@ import com.tjut.shop.model.po.MdGoods;
 import com.tjut.shop.model.vo.GoodParam;
 import com.tjut.shop.model.vo.PageParam;
 
+import javax.servlet.http.HttpServletResponse;
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -17,4 +20,10 @@ import com.tjut.shop.model.vo.PageParam;
 public interface MdGoodsService extends IService<MdGoods> {
 
     WmsResp getPage(PageParam page, GoodParam goodParam);
+
+    WmsResp<String> delGoods(List<String> ids);
+
+    WmsResp<MdGoods> getGoodById(String id);
+
+
 }

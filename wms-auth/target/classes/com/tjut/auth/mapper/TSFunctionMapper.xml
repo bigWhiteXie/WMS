@@ -36,7 +36,6 @@
                t1.functionurl       p_furl,
                t1.parentfunctionid  p_pid,
                t1.iconid            p_iconid,
-               t1.desk_iconid       p_desk_iconid,
                t1.functiontype      p_ftype,
                t2.ID                s_id,
                t2.functionlevel     s_flevel,
@@ -45,7 +44,6 @@
                t2.functionurl       s_furl,
                t2.parentfunctionid  s_pid,
                t2.iconid            s_iconid,
-               t2.desk_iconid       s_desk_iconid,
                t2.functiontype      s_ftype
         from t_s_function t1
                  left join t_s_function t2 on t2.parentfunctionid = t1.ID

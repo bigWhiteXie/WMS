@@ -4,42 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="xielei,feat:在gateWay解决跨域问题">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/ShopApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/controller/MdCusController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/controller/MdGoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/mapper/MdCusMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/mapper/MdCusMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/mapper/MdGoodsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/mapper/MdGoodsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/po/MdCus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/po/MdGoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/vo/GoodParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/vo/PageParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/MdCusService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/MdGoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/impl/MdCusServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/impl/MdGoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/resources/log4j2-dev.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms-shop/wms-shop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms数据库sql/md_cus.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms数据库sql/md_goods.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wms数据库sql/主数据.ndm2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="xielei,feat:新增wms-shop模块，主要包含商品和供应商信息等待开发">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_easyexcel_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_06.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_SparseBitSet_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_csv_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ehcache_ehcache_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/annotation/ExcelMerge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/util/DynamicEasyExcelExportUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/util/DynamicEasyExcelListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/util/ExcelMergeStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth-base/wms-auth-base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth-base/wms-auth-base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSFunctionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/src/main/java/com/tjut/auth/mapper/TSFunctionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSFunctionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/mapper/TSFunctionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/wms-auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/wms-auth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/resp/WmsResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/resp/WmsResp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wms-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wms-common/target/wms-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/wms-common.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/GatewayAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/src/main/java/com/tjut/gateway/config/GatewayAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/wms-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/wms-common.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wms-gateway/target/classes/com/tjut/gateway/config/GatewayAuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/target/classes/com/tjut/gateway/config/GatewayAuthFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-gateway/wms-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/wms-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-shop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/controller/MdGoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/controller/MdGoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/po/MdGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/po/MdGoods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/MdGoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/MdGoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/impl/MdGoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/impl/MdGoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/src/main/resources/log4j2-dev.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-shop/src/main/resources/log4j2-dev.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/wms-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-shop/wms-shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-test-project/wms-test-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-test-project/wms-test-project.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +114,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wms-auth/target/wms-auth.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -142,8 +150,18 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ShopApplication">
-    <configuration name="wms-auth | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/api-test/wms-auth.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
+    <configuration name="DynamicEasyExcelExportUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tjut.shop.util.DynamicEasyExcelExportUtils" />
+      <module name="wms-shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tjut.shop.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TestUserMapperTest.insertUrl2Redis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wms-auth" />
@@ -225,9 +243,9 @@
       <list>
         <item itemvalue="Spring Boot.ShopApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Application.DynamicEasyExcelExportUtils" />
         <item itemvalue="Spring Boot.TestApplication" />
         <item itemvalue="JUnit.TestUserMapperTest.insertUrl2Redis" />
-        <item itemvalue="HTTP Request.wms-auth | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +267,9 @@
       <workItem from="1681713558807" duration="15871000" />
       <workItem from="1681734818566" duration="7722000" />
       <workItem from="1681824111673" duration="1494000" />
-      <workItem from="1681975667947" duration="7422000" />
+      <workItem from="1681975667947" duration="8584000" />
+      <workItem from="1682157001401" duration="742000" />
+      <workItem from="1682322374553" duration="13301000" />
     </task>
     <task id="LOCAL-00001" summary="xielei,feat:初始化项目">
       <created>1681459501785</created>
@@ -293,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681799082019</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="xielei,feat:新增wms-shop模块，主要包含商品和供应商信息等待开发">
+      <created>1681983957241</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681983957241</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +345,8 @@
     <MESSAGE value="xielei,feat:完成菜单列表的获取" />
     <MESSAGE value="xielei,docs:接口文档新增彩带接口" />
     <MESSAGE value="xielei,feat:在gateWay解决跨域问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="xielei,feat:在gateWay解决跨域问题" />
+    <MESSAGE value="xielei,feat:新增wms-shop模块，主要包含商品和供应商信息等待开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="xielei,feat:新增wms-shop模块，主要包含商品和供应商信息等待开发" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
