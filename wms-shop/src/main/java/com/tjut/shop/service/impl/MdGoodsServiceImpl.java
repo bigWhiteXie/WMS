@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tjut.resp.WmsResp;
 import com.tjut.shop.mapper.MdGoodsMapper;
+import com.tjut.shop.model.po.MdCus;
 import com.tjut.shop.model.po.MdGoods;
 import com.tjut.shop.model.vo.GoodParam;
 import com.tjut.shop.model.vo.PageParam;
@@ -22,6 +23,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -38,6 +40,9 @@ public class MdGoodsServiceImpl extends ServiceImpl<MdGoodsMapper, MdGoods> impl
 
     @Autowired
     MdCusService cusService;
+
+    @Autowired
+    private MdCusService mdCusService;
 
     @Override
     public WmsResp getPage( PageParam page, GoodParam goodParam) {
@@ -72,7 +77,32 @@ public class MdGoodsServiceImpl extends ServiceImpl<MdGoodsMapper, MdGoods> impl
         return WmsResp.success(goods);
     }
 
+    @Override
+    public WmsResp<String> saveGood(MdGoods goods) {
+        //todo：校验所属货主、产品大类、产品属性和单位是否合法
 
+        boolean update = this.saveOrUpdate(goods);
+        return WmsResp.success("修改成功");
+    }
+
+    @Override
+    public WmsResp<List<String>> getAllCompany() {
+        List<String> list = mdCusService.lambdaQuery().select(MdCus::getZhongWenQch).list().stream().map((cus) -> {
+            return cus.getZhongWenQch();
+        }).collect(Collectors.toList());
+        return WmsResp.success(list);
+    }
+
+    @Override
+    public WmsResp<List<String>> getAllKinds() {
+        return null;
+    }
+
+    @Override
+    public WmsResp<List<String>> getAllSku() {
+
+        return null;
+    }
 
 
 }

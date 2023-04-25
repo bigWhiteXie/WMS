@@ -1,9 +1,8 @@
 package com.tjut.shop.model.po;
 
+import com.alibaba.excel.annotation.ExcelIgnore;
 import com.alibaba.excel.annotation.ExcelProperty;
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.tjut.shop.annotation.ExcelMerge;
 import lombok.Data;
 
@@ -23,8 +22,8 @@ public class MdGoods implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @ExcelProperty("商品主键")
-//    @ExcelMerge(merge = true, isPrimaryKey = true)
+    @ExcelIgnore
+    @TableId(type = IdType.ASSIGN_ID)
     private String id;
 
     /**
@@ -299,16 +298,19 @@ public class MdGoods implements Serializable {
     @TableField("JIZHUN_WENDU")
     private String jizhunWendu;
 
+    @ExcelIgnore
     private String ywMingCheng;
 
+    @ExcelIgnore
     private String rwMingCheng;
 
     /**
      * 客户名称
      */
-    @ExcelProperty("客户名称")
+    @ExcelProperty("所属货主")
     private String cusName;
 
+    @ExcelIgnore
     private String peisongdian;
 
     /**
@@ -317,10 +319,13 @@ public class MdGoods implements Serializable {
     @ExcelProperty("分类代码")
     private String categoryCode;
 
+    @ExcelIgnore
     private String categoryId;
 
+    @ExcelIgnore
     private String minStock;
 
+    @ExcelIgnore
     private String sku;
 
 
