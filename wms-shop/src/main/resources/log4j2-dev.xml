@@ -38,9 +38,9 @@
          <!--过滤掉spring和mybatis的一些无用的debug信息-->
         <logger name="org.springframework" level="INFO">
         </logger>
-        <logger name="org.mybatis" level="INFO">
+        <logger name="org.mybatis" level="DEBUG">
         </logger>
-        <logger name="com.tjut" level="DEBUG">
+        <logger name="com.tjut.shop" level="DEBUG">
         </logger>
 
         <logger name="springfox" level="INFO">
