@@ -33,4 +33,6 @@ public interface MdGoodsService extends IService<MdGoods> {
     WmsResp<List<String>> getAllKinds();
 
     WmsResp<List<String>> getAllSku();
+
+    WmsResp<List<String>> getAllAttr();
 }
