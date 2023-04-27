@@ -12,7 +12,8 @@ import java.util.List;
  */
 public interface MdSupService extends IService<MdSup> {
 
-    MdSup getByZhongWenQc();
 
-    WmsResp<String> delSup(List<String> ids);
+    WmsResp<List<String>> getAllProperties();
+
+    WmsResp<List<String>> getAllEmails();
 }

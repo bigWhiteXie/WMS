@@ -21,17 +21,14 @@ import java.util.List;
 @Service
 public class MdSupServiceImpl extends ServiceImpl<MdSupMapper,MdSup> implements MdSupService{
 
+
     @Override
-    public MdSup getByZhongWenQc() {
+    public WmsResp<List<String>> getAllProperties() {
         return null;
     }
 
     @Override
-    public WmsResp<String> delSup(List<String> ids) {
-        boolean remove = this.removeByIds(ids);
-        if (remove){
-            return WmsResp.success("删除成功");
-        }
+    public WmsResp<List<String>> getAllEmails() {
         return null;
     }
 }
