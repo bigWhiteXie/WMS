@@ -6,12 +6,10 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tjut.resp.WmsResp;
 import com.tjut.shop.mapper.MdGoodsMapper;
-import com.tjut.shop.model.po.MdCus;
-import com.tjut.shop.model.po.MdGoods;
+import com.tjut.shop.model.po.*;
 import com.tjut.shop.model.vo.GoodParam;
 import com.tjut.shop.model.vo.PageParam;
-import com.tjut.shop.service.MdCusService;
-import com.tjut.shop.service.MdGoodsService;
+import com.tjut.shop.service.*;
 import com.tjut.shop.util.ExcelMergeStrategy;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
@@ -93,15 +91,34 @@ public class MdGoodsServiceImpl extends ServiceImpl<MdGoodsMapper, MdGoods> impl
         return WmsResp.success(list);
     }
 
+    @Autowired
+    DictGoodsAttService dictGoodsAttService;
+
+    @Autowired
+    DictGoodsKindService dictGoodsKindService;
+
+    @Autowired
+    DictEnterGoodsUnitService dictEnterGoodsUnitService;
+
     @Override
     public WmsResp<List<String>> getAllKinds() {
-        return null;
+        List<String> list = dictGoodsKindService.lambdaQuery().select(DictGoodsKind::getName).list().
+                stream().map((item) -> item.getName()).collect(Collectors.toList());
+        return WmsResp.success(list);
     }
 
     @Override
     public WmsResp<List<String>> getAllSku() {
+        List<String> list = dictEnterGoodsUnitService.lambdaQuery().select(DictEnterGoodsUnit::getName).list().
+                stream().map((item) -> item.getName()).collect(Collectors.toList());
+        return WmsResp.success(list);
+    }
 
-        return null;
+    @Override
+    public WmsResp<List<String>> getAllAttr() {
+        List<String> list = dictGoodsAttService.lambdaQuery().select(DictGoodsAtt::getName).list().
+                stream().map((item) -> item.getName()).collect(Collectors.toList());
+        return WmsResp.success(list);
     }
 
 
