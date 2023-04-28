@@ -13,14 +13,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$PROJECT_DIR$/../../../../apache-maven-3.8.6/mvn_local_resp/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar" />
+          <entry name="$PROJECT_DIR$/../../Maven/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar" />
         </processorPath>
         <module name="wms-auth" />
         <module name="wms-test-project" />
         <module name="wms-auth-base" />
         <module name="wms-gateway" />
-        <module name="wms-shop" />
         <module name="wms-common" />
+        <module name="wms-shop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
