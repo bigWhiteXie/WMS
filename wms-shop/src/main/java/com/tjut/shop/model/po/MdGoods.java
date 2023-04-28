@@ -3,6 +3,8 @@ package com.tjut.shop.model.po;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -17,10 +19,12 @@ import java.time.LocalDateTime;
  */
 @Data
 @TableName("md_goods")
+@ApiModel("客户类")
 public class MdGoods implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @ApiModelProperty("客户id")
     private String id;
 
     /**

@@ -1,7 +1,12 @@
 package com.tjut.shop.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.tjut.resp.WmsResp;
 import com.tjut.shop.model.po.MdCus;
+import com.tjut.shop.model.vo.CusParam;
+import com.tjut.shop.model.vo.PageParam;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +18,7 @@ import com.tjut.shop.model.po.MdCus;
  */
 public interface MdCusService extends IService<MdCus> {
 
+    WmsResp getPage(PageParam page, CusParam cusParam);
+
+    WmsResp<String> delCus(List<String> ids);
 }
