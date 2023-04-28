@@ -45,9 +45,21 @@ public class MdCusServiceImpl extends ServiceImpl<MdCusMapper, MdCus> implements
         boolean remove = this.removeByIds(ids);
 
         if(remove) {
-            return WmsResp.success("客户信息删除成功！");
+            return WmsResp.success("客户信息删除成功");
         }
 
         return WmsResp.fail("客户信息删除失败");
+    }
+
+    @Override
+    public WmsResp<String> saveCus(MdCus cus) {
+        boolean saveOrUpdate = this.saveOrUpdate(cus);
+        return WmsResp.success("客户修改成功");
+    }
+
+    @Override
+    public WmsResp lookCus(String id) {
+        MdCus cus = this.getById(id);
+        return WmsResp.success(cus);
     }
 }

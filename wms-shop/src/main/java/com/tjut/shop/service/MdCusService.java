@@ -21,4 +21,8 @@ public interface MdCusService extends IService<MdCus> {
     WmsResp getPage(PageParam page, CusParam cusParam);
 
     WmsResp<String> delCus(List<String> ids);
+
+    WmsResp<String> saveCus(MdCus cus);
+
+    WmsResp lookCus(String id);
 }
