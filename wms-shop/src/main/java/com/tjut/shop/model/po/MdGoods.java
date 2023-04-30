@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.annotation.*;
 import com.tjut.shop.annotation.ExcelMerge;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import jdk.nashorn.internal.ir.annotations.Ignore;
+
 import lombok.Data;
 
 import java.io.Serializable;
@@ -72,6 +72,7 @@ public class MdGoods implements Serializable {
      */
     @ExcelProperty("更新日期")
     @ApiModelProperty(hidden = true)
+    @TableField(fill = FieldFill.UPDATE)
     private LocalDateTime updateDate;
 
     /**
@@ -93,7 +94,7 @@ public class MdGoods implements Serializable {
      */
     @ExcelProperty("所属客户")
     @ApiModelProperty(value = "所属客户")
-    private String suoShuKeHu;
+    private String suoShuSup;
 
     /**
      * 商品名称
@@ -222,6 +223,10 @@ public class MdGoods implements Serializable {
     @ApiModelProperty(value = "拆零单位")
     private String jshDanWei;
 
+    @ExcelProperty("出货频率")
+    @ApiModelProperty(value = "出货频率")
+    private String pinLv;
+
     /**
      * 体积
      */
@@ -243,26 +248,8 @@ public class MdGoods implements Serializable {
     @ApiModelProperty(value = "拆零数量")
     private String chlShl;
 
-    /**
-     * 件数与体积比
-     */
-    @ExcelProperty("件数与体积比")
-    @ApiModelProperty(value = "件数与体积比")
-    private String jtiJiBi;
 
-    /**
-     * 件数与毛重比
-     */
-    @ExcelProperty("件数与毛重比")
-    @ApiModelProperty(value = "件数与毛重比")
-    private String jmZhongBi;
 
-    /**
-     * 件数与净重比
-     */
-    @ExcelProperty("件数与净重比")
-    @ApiModelProperty(value = "件数与净重比")
-    private String jjZhongBi;
 
     /**
      * 尺寸单位
@@ -332,53 +319,6 @@ public class MdGoods implements Serializable {
     @ExcelProperty("毛重")
     @ApiModelProperty(value = "毛重")
     private String zhlKgm;
-
-    /**
-     * 商品客户编码
-     */
-    @ExcelProperty("商品客户编码")
-    @TableField("SHP_BIAN_MAKH")
-    @ApiModelProperty(value = "商品客户编码")
-    private String shpBianMakh;
-
-    /**
-     * 基准温度
-     */
-    @TableField("JIZHUN_WENDU")
-    private String jizhunWendu;
-
-    @ExcelIgnore
-    @ApiModelProperty(hidden = true)
-    private String ywMingCheng;
-
-    @ExcelIgnore
-    @ApiModelProperty(hidden = true)
-    private String rwMingCheng;
-
-    /**
-     * 客户名称
-     */
-    @ExcelProperty("所属货主")
-    @ApiModelProperty(value = "所属货主")
-    private String cusName;
-
-    @ExcelIgnore
-    @ApiModelProperty(hidden = true)
-    private String peisongdian;
-
-    /**
-     * 分类
-     */
-    @ExcelProperty("分类代码")
-    @ApiModelProperty(value = "商品类目")
-    private String categoryCode;
-
-    @ExcelIgnore
-    private String categoryId;
-
-    @ExcelIgnore
-    @ApiModelProperty(value = "最小库存")
-    private String minStock;
 
     @ExcelIgnore
     @ApiModelProperty(value = "sku")

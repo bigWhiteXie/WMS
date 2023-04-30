@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="xielei:修改workspace为当前项目" />
+    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="xielei:修改workspace为当前项目">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth-base/wms-auth-base.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/config/JwtLogoutSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/config/JwtLogoutSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/dto/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSDepart.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSDepart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSRoleFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSRoleFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSRoleUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSRoleUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSUserOrg.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/model/po/TSUserOrg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/classes/com/tjut/auth/service/impl/TSUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/target/test-classes/com/tjut/test/TestUserMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-auth/target/test-classes/com/tjut/test/TestUserMapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-auth/wms-auth.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/redis/RedisKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/src/main/java/com/tjut/redis/RedisKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/auth/model/TSDepart.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/auth/model/TSDepart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/auth/model/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/auth/model/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/WmsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/exception/WmsException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/redis/RedisKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/classes/com/tjut/redis/RedisKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/target/wms-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/wms-common/target/wms-common.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-common/wms-common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-gateway/target/classes/com/tjut/gateway/config/GatewayAuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/wms-gateway/target/classes/com/tjut/gateway/config/GatewayAuthFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-gateway/wms-gateway.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/controller/MdGoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/controller/MdGoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/po/MdGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/model/po/MdGoods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/impl/MdGoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/impl/MdGoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-shop/wms-shop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wms-test-project/wms-test-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wms-test-project/wms-test-project.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +53,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="c1d5980a6655b13d6ad0a504d431e8e3d957f496" />
+        <entry key="$PROJECT_DIR$" value="df457c295f90d079c44ecc5784a138ac9dfc3c84" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,7 +144,7 @@
       <recent name="com.tjut.gateway" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ShopApplication">
     <configuration name="DynamicEasyExcelExportUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tjut.shop.util.DynamicEasyExcelExportUtils" />
       <module name="wms-shop" />
@@ -137,6 +170,17 @@
       <option name="MAIN_CLASS_NAME" value="com.tjut.test.TestUserMapperTest" />
       <option name="METHOD_NAME" value="insertUrl2Redis" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -183,6 +227,13 @@
     </configuration>
     <configuration name="TestApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="wms-test-project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tjut.TestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Test-Project" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tjut.TestApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -237,6 +288,10 @@
       <workItem from="1682322374553" duration="15373000" />
       <workItem from="1682386979730" duration="7794000" />
       <workItem from="1682404768563" duration="5137000" />
+      <workItem from="1682686513194" duration="1537000" />
+      <workItem from="1682692736158" duration="1947000" />
+      <workItem from="1682815815361" duration="744000" />
+      <workItem from="1682835481307" duration="6113000" />
     </task>
     <task id="LOCAL-00001" summary="xielei,feat:初始化项目">
       <created>1681459501785</created>
@@ -344,6 +399,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="xielei:修改workspace为当前项目" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/wms-shop/src/main/java/com/tjut/shop/service/impl/MdGoodsServiceImpl.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest" memberName="request" />
