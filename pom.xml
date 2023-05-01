@@ -12,6 +12,7 @@
         <module>wms-auth-base</module>
         <module>wms-test-project</module>
         <module>wms-common</module>
+        <module>wms-receive-goods</module>
         <module>wms-gateway</module>
         <module>wms-shop</module>
     </modules>
