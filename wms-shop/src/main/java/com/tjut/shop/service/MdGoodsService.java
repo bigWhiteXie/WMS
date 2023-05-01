@@ -25,7 +25,6 @@ public interface MdGoodsService extends IService<MdGoods> {
 
     WmsResp<MdGoods> getGoodById(String id);
 
-
     WmsResp<String> saveGood(MdGoods goods);
 
     WmsResp<List<String>> getAllCompany();
@@ -33,4 +32,6 @@ public interface MdGoodsService extends IService<MdGoods> {
     WmsResp<List<String>> getAllKinds();
 
     WmsResp<List<String>> getAllSku();
+
+    WmsResp<List<String>> getAllAttr();
 }

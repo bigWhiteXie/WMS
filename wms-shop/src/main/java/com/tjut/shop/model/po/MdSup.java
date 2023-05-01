@@ -268,4 +268,6 @@ public class MdSup implements Serializable{
      * 备注
      */
     private String beiZhu;
+
+
 }

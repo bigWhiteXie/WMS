@@ -66,9 +66,7 @@ public class MdGoodsController {
         List<MdGoods> list = mdGoodsService.lambdaQuery().
                 eq(StringUtils.isNotBlank(goodParam.getChpShuXing()), MdGoods::getChpShuXing, goodParam.getChpShuXing()).
                 eq(StringUtils.isNotBlank(goodParam.getShpBianMa()), MdGoods::getShpBianMa, goodParam.getShpBianMa()).
-                eq(StringUtils.isNotBlank(goodParam.getShpBianMakh()), MdGoods::getShpBianMakh, goodParam.getShpBianMakh()).
                 eq(StringUtils.isNotBlank(goodParam.getShpMingCheng()), MdGoods::getShpMingCheng, goodParam.getShpMingCheng()).
-                eq(StringUtils.isNotBlank(goodParam.getSysCompanyName()), MdGoods::getCusName, goodParam.getSysCompanyName()).
                 eq(StringUtils.isNotBlank(goodParam.getChpShuXing()), MdGoods::getChpShuXing, goodParam.getChpShuXing()).
                 list();
         try {
@@ -113,10 +111,16 @@ public class MdGoodsController {
         return mdGoodsService.getAllKinds();
     }
 
-    @ApiOperation("单位下拉菜单")
+    @ApiOperation("商品单位下拉菜单")
     @GetMapping("sku")
     public WmsResp<List<String>> getAllSku(){
         return mdGoodsService.getAllSku();
+    }
+
+    @ApiOperation("商品属性下拉菜单")
+    @GetMapping("attributes")
+    public WmsResp<List<String>> getAllAttr(){
+        return mdGoodsService.getAllAttr();
     }
 
 
