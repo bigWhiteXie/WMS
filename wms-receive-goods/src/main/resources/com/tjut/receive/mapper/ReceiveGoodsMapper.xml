@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tjut.receive.mapper.ReceiveGoodsMapper">
+    <select id="getReceipt" resultType="com.tjut.receive.model.entity.WmIn">
+        select * from wm_in where 1=1
+        <if test="imNoticeId != null">
+            and im_notice_id = #{imNoticeId}
+        </if>
+        <if test="imData != null">
+            and im_data = #{imData}
+        </if>
+    </select>
+</mapper>
