@@ -74,22 +74,8 @@ public class MdSupController {
     //查询供应商
     @ApiOperation("分页查询供应商信息")
     @PostMapping("page")
-    public WmsResp<Page> supList(PageParam pageParam, @RequestBody SupParam supParam){
-        log.info("page = {},pageSize = {},sup属性 = {}" ,pageParam.getIndex(),pageParam.getSize(),supParam);
-        //分页构造器
-        Page<MdSup> pageInfo = new Page<>(pageParam.getIndex(), pageParam.getSize());
-        //条件构造器
-        LambdaQueryWrapper<MdSup> queryWrapper = new LambdaQueryWrapper<>();
-        //查询条件
-        queryWrapper.eq(supParam.getZhongWenQch() != null,MdSup::getZhongWenQch,supParam.getZhongWenQch());
-        queryWrapper.eq(supParam.getZhuJiMa() != null,MdSup::getZhuJiMa,supParam.getZhuJiMa());
-        queryWrapper.eq(supParam.getGysJianCheng() != null,MdSup::getGysJianCheng,supParam.getGysJianCheng());
-        queryWrapper.eq(supParam.getGysBianMa() != null,MdSup::getGysBianMa,supParam.getGysBianMa());
-
-        //分页查询
-        mdSupService.page(pageInfo,queryWrapper);
-
-        return WmsResp.success(pageInfo);
+    public WmsResp supList(PageParam page, @RequestBody SupParam supParam){
+        return mdSupService.getPage(page,supParam);
     }
 
 
