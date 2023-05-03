@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="xielei:修改workspace为当前项目" />
+=======
+    <list default="true" id="837394f2-1dae-4f9b-8e9a-88ca269266da" name="Changes" comment="qwh:添加供应商信息，商品，消费者，供应商具体操作待开发" />
+>>>>>>> v1.0
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +71,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "node.js.selected.package.tslint": "(autodetect)",
+<<<<<<< HEAD
     "settings.editor.selected.configurable": "MavenSettings"
+=======
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "a599e5b41892c34d4bd39e22a157c245"
+>>>>>>> v1.0
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -305,7 +317,11 @@
                   <entry key="branch">
                     <value>
                       <list>
+<<<<<<< HEAD
                         <option value="master" />
+=======
+                        <option value="v1.0" />
+>>>>>>> v1.0
                       </list>
                     </value>
                   </entry>

@@ -27,15 +27,15 @@ public class ExcelUtils {
     public static <T,Dao extends IService<T>> void readExcel(MultipartFile file, Class<T> clazz,Dao dao) throws IOException {
         DataListener<T, Dao> listener = new DataListener<>(dao);
 
-        List<MdGoods> goodsList = EasyExcel.read(file.getInputStream(),MdGoods.class,listener)
+        List<T> getList = EasyExcel.read(file.getInputStream(), clazz, listener)
                 .head(MdGoods.class)
                 .sheet()
                 .doReadSync();
     }
 
 
-    public static <T,E> void exportExcel(List<T> list,Class<E> clazz,String filename,HttpServletResponse response) throws IOException {
-        setExcelResponseProp(response,filename);
+    public static <T,E> void exportExcel(List<T> list, Class<E> clazz, String filename, HttpServletResponse response) throws IOException {
+        setExcelResponseProp(response, filename);
         EasyExcel.write(response.getOutputStream())
                 .head(clazz)
                 .excelType(ExcelTypeEnum.XLSX)
