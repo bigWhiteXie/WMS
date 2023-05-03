@@ -19,8 +19,8 @@
         <module name="wms-test-project" />
         <module name="wms-gateway" />
         <module name="wms-auth-base" />
-        <module name="wms-common" />
         <module name="wms-shop" />
+        <module name="wms-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
