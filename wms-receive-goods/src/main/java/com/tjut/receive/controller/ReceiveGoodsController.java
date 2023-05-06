@@ -34,7 +34,8 @@ public class ReceiveGoodsController {
      * @param receiptDto 入库单信息
      * @return 创建是否成功
      */
-    public boolean createInNoticeReceipt(ReceiptDto receiptDto){
+    @PostMapping("/inNoticeReceipt")
+    public boolean createInNoticeReceipt(@RequestBody ReceiptDto receiptDto){
         return receiveGoodsService.createInNoticeReceipt(receiptDto);
     }
 }

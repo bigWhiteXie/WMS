@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ReceiveGoodsService {
 
-    public List<ReceiptDto> getReceipt(QueryReceiptDto queryReceiptDto);
+    List<ReceiptDto> getReceipt(QueryReceiptDto queryReceiptDto);
 
-    public boolean createInNoticeReceipt(ReceiptDto receiptDto);
+    boolean createInNoticeReceipt(ReceiptDto receiptDto);
 }
