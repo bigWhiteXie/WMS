@@ -47,6 +47,13 @@ public class MdGoodsController {
         return mdGoodsService.getPage(page,goodParam);
     }
 
+    @ApiOperation("根据商品编码查询商品")
+    @PostMapping("find/{code}")
+    public WmsResp findGoods(@PathVariable("bianma") String code){
+        MdGoods one = mdGoodsService.lambdaQuery().eq(MdGoods::getShpBianMa, code).one();
+        return WmsResp.success(one);
+    }
+
     @ApiOperation("删除商品记录")
     @GetMapping("delete")
     public WmsResp<String> delGoods(@ApiParam("商品id列表") String[] ids){
@@ -67,7 +74,6 @@ public class MdGoodsController {
                 eq(StringUtils.isNotBlank(goodParam.getChpShuXing()), MdGoods::getChpShuXing, goodParam.getChpShuXing()).
                 eq(StringUtils.isNotBlank(goodParam.getShpBianMa()), MdGoods::getShpBianMa, goodParam.getShpBianMa()).
                 eq(StringUtils.isNotBlank(goodParam.getShpMingCheng()), MdGoods::getShpMingCheng, goodParam.getShpMingCheng()).
-                eq(StringUtils.isNotBlank(goodParam.getChpShuXing()), MdGoods::getChpShuXing, goodParam.getChpShuXing()).
                 list();
         try {
             //导出表格给前端

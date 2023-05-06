@@ -28,7 +28,6 @@ public class MdGoods implements Serializable {
 
     @ExcelIgnore
     @TableId(type = IdType.ASSIGN_ID)
-    @ApiModelProperty(hidden = true)
     private String id;
 
     /**

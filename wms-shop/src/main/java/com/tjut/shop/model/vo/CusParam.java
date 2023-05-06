@@ -1,34 +1,16 @@
-package com.tjut.shop.model.po;
+package com.tjut.shop.model.vo;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableName;
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import org.hibernate.validator.constraints.Length;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
-import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.util.Date;
 
-/**
- * <p>
- * 
- * </p>
- *
- * @author codeXie
- */
 @Data
-@TableName("md_cus")
-public class MdCus implements Serializable {
+@ApiModel("客户分页条件查询")
+public class CusParam {
 
-    private static final long serialVersionUID = 1L;
 
-    /**
-     * 主键
-     */
     @ApiModelProperty("主键")
     private String id;
     /**
@@ -122,6 +104,9 @@ public class MdCus implements Serializable {
      */
     @ApiModelProperty("备注")
     private String beiZhu;
+
+
+
 
 
 }
