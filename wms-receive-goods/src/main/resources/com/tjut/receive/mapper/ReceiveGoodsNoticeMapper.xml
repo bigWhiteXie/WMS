@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tjut.receive.mapper.ReceiveGoodsNoticeMapper">
+
+<!--  智能推荐储位  -->
+    <select id="getEmptyStorage" resultType="String">
+        select ku_wei_ming_cheng from md_bin
+        <where>
+            <if test="type != null">
+                goods_type = #{type}
+            </if>
+            <if test="outFrequency !=null">
+               and ku_wei_ming_cheng like #{outFrequency}
+            </if>
+            <if test="net != null">
+                and use_weight >= #{net}
+            </if>
+            <if test="volume != null">
+                and use_volume >= #{volume}
+            </if>
+            limit 1
+        </where>
+    </select>
+</mapper>

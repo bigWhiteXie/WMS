@@ -7,7 +7,7 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
-@ApiModel
+@ApiModel("入库单查询条件")
 @Data
 public class QueryReceiptDto {
     /**
@@ -20,4 +20,18 @@ public class QueryReceiptDto {
      */
     @ApiModelProperty(value = "预计到货时间")
     private String imData;
+
+    /**
+     * 页数
+     */
+    @ApiModelProperty(value = "页数")
+    private int page;
+
+    /**
+     * 大小
+     */
+    @ApiModelProperty(value = "大小")
+    private int size;
+
+    private int num;
 }

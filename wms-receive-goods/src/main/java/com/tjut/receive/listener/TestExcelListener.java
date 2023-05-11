@@ -29,6 +29,6 @@ public class TestExcelListener {
 //        System.out.println(testExcelList);
         testExcelMapper.importToDb(testExcelList);
         long end = System.currentTimeMillis();
-        log.info("批量单次花费时间：{}",end-start);
+        log.info("批量单次花费时间：{}秒",(end-start)/1000);
     }
 }

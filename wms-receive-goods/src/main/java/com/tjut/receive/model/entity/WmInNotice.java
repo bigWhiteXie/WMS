@@ -1,6 +1,7 @@
 package com.tjut.receive.model.entity;
 
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
  * 入库通知单
  */
 @Data
+@TableName("wm_in_notice")
 public class WmInNotice {
 
   private String createName;

@@ -94,9 +94,7 @@
 <!--   mybatisplus     -->
         <dependency>
             <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-extension</artifactId>
-            <version>3.4.3</version>
-            <scope>compile</scope>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
         <!--添加EasyExcel的依赖用于Excel的操作-->
         <dependency>

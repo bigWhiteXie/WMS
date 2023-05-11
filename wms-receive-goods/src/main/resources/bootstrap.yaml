@@ -1,6 +1,10 @@
 spring:
   application:
     name: receive-goods
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 500MB
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://117.50.181.29:3306/wms_supplement?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
@@ -52,8 +56,14 @@ feign:
         readTimeout: 100000
 server:
   port: 8083
+
 mybatis:
   config-location: classpath:mybatis-config.xml
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 # 日志级别配置
 #logging:
 #  level:

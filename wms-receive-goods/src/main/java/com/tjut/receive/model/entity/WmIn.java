@@ -1,16 +1,15 @@
 package com.tjut.receive.model.entity;
 
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Data
+@TableName("wm_in")
 public class WmIn {
 
-  /**
-   * 入库单号
-   */
   private String id;
   private String createName;
   private String createBy;
