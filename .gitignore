@@ -19,7 +19,6 @@ wms数据库sql
 *.iws
 *.iml
 *.ipr
-
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

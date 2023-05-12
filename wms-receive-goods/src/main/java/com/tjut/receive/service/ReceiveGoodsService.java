@@ -2,12 +2,17 @@ package com.tjut.receive.service;
 
 import com.tjut.receive.model.dto.QueryReceiptDto;
 import com.tjut.receive.model.dto.ReceiptDto;
+import com.tjut.receive.model.entity.WmIn;
 
 import java.util.List;
 
 public interface ReceiveGoodsService {
 
-    public List<ReceiptDto> getReceipt(QueryReceiptDto queryReceiptDto);
+    List<ReceiptDto> getReceipt(QueryReceiptDto queryReceiptDto);
 
-    public boolean createInNoticeReceipt(ReceiptDto receiptDto);
+
+    int createReceipt(ReceiptDto receiptDto);
+
+    int updateReceipt(WmIn wmIn);
+
 }

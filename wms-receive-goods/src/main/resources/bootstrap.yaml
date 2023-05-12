@@ -1,21 +1,38 @@
 spring:
   application:
     name: receive-goods
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 500MB
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.101.65:3306/wms_supplement?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
-    password: mysql
+    url: jdbc:mysql://117.50.181.29:3306/wms_supplement?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+#    url: jdbc:mysql://192.168.101.65:3306/wms_supplement?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+    password: j3391111
     username: root
   rabbitmq:
-    host: 192.168.101.65
+#    腾讯云地址
+    host: 43.138.51.206
+#    本地虚拟机地址
+#    host: 192.168.101.65
     port: 5672
     username: guest
-    password: 123
+    password: guest
     virtual-host: /
     publisher-confirm-type: correlated
     publisher-returns: true
     template:
       mandatory: true
+    listener:
+      simple:
+        retry:
+          enabled: true # 开启消费者失败重试
+          initial-interval: 1000 # 初次的失败等待时长为1秒
+          multiplier: 1 # 失败的等待时长倍数，下次等待时长 = multiplier * last-interval
+          max-attempts: 3 # 最大重试次数
+          stateless: true # true无状态；false有状态。如果业务中包含事务，这里改为false
+
   cloud:
     nacos:
       server-addr: 117.50.181.29:8845
@@ -31,7 +48,26 @@ spring:
           - data-id: redis-${spring.profiles.active}.yaml
             group: wms-project
             refresh: true
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 100000
+        readTimeout: 100000
 server:
   port: 8083
+
 mybatis:
   config-location: classpath:mybatis-config.xml
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 日志级别配置
+#logging:
+#  level:
+#    com:
+#      tjut:
+#        receive:
+#          listener: debug

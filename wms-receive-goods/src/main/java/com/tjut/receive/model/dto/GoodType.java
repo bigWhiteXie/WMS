@@ -8,9 +8,19 @@ public class GoodType {
     /**
      * 发货频率
      */
-    private int outFrequency;
+    private String outFrequency;
     /**
      * 商品大类
      */
-    private String Type;
+    private String type;
+
+    /**
+     * 商品净重
+     */
+    private int net;
+
+    /**
+     * 商品体积
+     */
+    private int volume;
 }

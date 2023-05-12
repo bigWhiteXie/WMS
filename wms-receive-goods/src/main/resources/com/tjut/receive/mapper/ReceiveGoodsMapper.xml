@@ -4,6 +4,8 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.tjut.receive.mapper.ReceiveGoodsMapper">
+
+<!--  分页查询入库单  -->
     <select id="getReceipt" resultType="com.tjut.receive.model.entity.WmIn">
         select * from wm_in where 1=1
         <if test="imNoticeId != null">
@@ -12,5 +14,34 @@
         <if test="imData != null">
             and im_data = #{imData}
         </if>
+        limit #{num},#{size}
+    </select>
+
+<!--  创建入库通知单  -->
+    <insert id="createInNoticeReceipt">
+    insert into wm_in_notice values (0,#{createName},#{createBy},#{createDate},#{updateName},#{updateBy},#{updateDate},
+                                     #{imNoticeId},#{goodsCode},#{goodsCount},#{goodsPrdData},#{goodsBatch},
+                                     #{binPre},#{goodsFvol},#{goodsWeight},#{goodsUnit},#{goodsQmCount},#{baseUnit},
+                                     #{baseGoodscount},#{baseQmcount},#{goodsName},#{imBeizhu},#{shpGuiGe},#{chpShuXing},
+                                     #{areaCode},#{storeCode},#{noticeId})
+    </insert>
+<!--  智能推荐储位  -->
+    <select id="getEmptyStorage" resultType="String">
+        select ku_wei_ming_cheng from md_bin
+        <where>
+            <if test="type != null">
+                goods_type = #{type}
+            </if>
+            <if test="outFrequency !=null">
+               and ku_wei_ming_cheng like #{outFrequency}
+            </if>
+            <if test="net != null">
+                and use_weight >= #{net}
+            </if>
+            <if test="volume != null">
+                and use_volume >= #{volume}
+            </if>
+            limit 1
+        </where>
     </select>
 </mapper>
