@@ -6,6 +6,8 @@ import com.tjut.resp.WmsResp;
 import com.tjut.shop.model.po.MdGoods;
 import com.tjut.shop.model.vo.GoodParam;
 import com.tjut.shop.model.vo.PageParam;
+import com.tjut.shop.mq.MessageSender;
+import com.tjut.shop.mq.MqQueueConfig;
 import com.tjut.shop.service.MdCusService;
 import com.tjut.shop.service.MdGoodsService;
 import com.tjut.shop.util.DataListener;
@@ -39,6 +41,9 @@ public class MdGoodsController {
 
     @Autowired
     private MdGoodsService mdGoodsService;
+
+    @Autowired
+    private MessageSender messageSender;
 
 
     @ApiOperation("分页查询商品信息")
@@ -88,7 +93,7 @@ public class MdGoodsController {
     @PostMapping("/upload")
     public WmsResp<String> uploadExcel(@RequestPart(value = "file") MultipartFile file) {
         try {
-            ExcelUtils.readExcel(file,MdGoods.class,mdGoodsService);
+            ExcelUtils.readExcelByMq(file,MdGoods.class,messageSender, MqQueueConfig.EXCHANGE_SHOP,"goods.import");
             return WmsResp.success("上传成功");
         } catch (IOException e) {
             return WmsResp.fail("上传失败");

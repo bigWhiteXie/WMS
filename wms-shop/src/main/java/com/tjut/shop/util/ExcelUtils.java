@@ -4,6 +4,7 @@ import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.support.ExcelTypeEnum;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.tjut.shop.model.po.MdGoods;
+import com.tjut.shop.mq.MessageSender;
 import com.tjut.shop.service.MdGoodsService;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -27,8 +28,16 @@ public class ExcelUtils {
     public static <T,Dao extends IService<T>> void readExcel(MultipartFile file, Class<T> clazz,Dao dao) throws IOException {
         DataListener<T, Dao> listener = new DataListener<>(dao);
 
-        List<MdGoods> goodsList = EasyExcel.read(file.getInputStream(),MdGoods.class,listener)
-                .head(MdGoods.class)
+        List<MdGoods> goodsList = EasyExcel.read(file.getInputStream(),clazz,listener)
+                .head(clazz)
+                .sheet()
+                .doReadSync();
+    }
+
+    public static <T> void readExcelByMq(MultipartFile file, Class<T> clazz, MessageSender sender,String exchange,String rk) throws IOException {
+        MqDataListener<Object> listener = new MqDataListener<>(sender, exchange, rk);
+        List<MdGoods> goodsList = EasyExcel.read(file.getInputStream(),clazz,listener)
+                .head(clazz)
                 .sheet()
                 .doReadSync();
     }
