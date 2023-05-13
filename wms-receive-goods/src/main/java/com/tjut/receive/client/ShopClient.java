@@ -1,7 +1,7 @@
 package com.tjut.receive.client;
 
 import com.tjut.receive.model.dto.GoodParam;
-import com.tjut.resp.WmsResp;
+import com.tjut.common.resp.WmsResp;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

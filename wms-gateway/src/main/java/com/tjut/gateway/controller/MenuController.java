@@ -1,12 +1,11 @@
 package com.tjut.gateway.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.netflix.client.http.HttpRequest;
-import com.tjut.auth.model.UserDto;
+import com.tjut.common.model.UserDto;
 
 import com.tjut.gateway.feignclients.AuthServiceClient;
 
-import com.tjut.resp.WmsResp;
+import com.tjut.common.resp.WmsResp;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;

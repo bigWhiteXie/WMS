@@ -1,11 +1,7 @@
 package com.tjut.shop.controller;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.tjut.resp.WmsResp;
-import com.tjut.shop.model.po.MdGoods;
+import com.tjut.common.resp.WmsResp;
 import com.tjut.shop.model.po.MdSup;
-import com.tjut.shop.model.vo.GoodParam;
 import com.tjut.shop.model.vo.PageParam;
 import com.tjut.shop.model.vo.SupParam;
 import com.tjut.shop.service.MdSupService;
@@ -14,16 +10,12 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.validation.constraints.Email;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;

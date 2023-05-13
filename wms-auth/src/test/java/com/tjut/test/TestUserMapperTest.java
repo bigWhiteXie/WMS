@@ -4,7 +4,7 @@ package com.tjut.test;
 import com.tjut.auth.AuthApplication;
 import com.tjut.auth.mapper.TSUserMapper;
 import com.tjut.auth.model.po.TSFunction;
-import com.tjut.redis.RedisKey;
+import com.tjut.common.redis.RedisKey;
 import org.apache.commons.lang.StringUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

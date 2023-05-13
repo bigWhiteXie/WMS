@@ -1,6 +1,6 @@
 package com.tjut.shop.config;
 
-import com.tjut.exception.WmsException;
+import com.tjut.common.exception.WmsException;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Component;

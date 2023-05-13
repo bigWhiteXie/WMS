@@ -15,6 +15,7 @@
         <module>wms-receive-goods</module>
         <module>wms-gateway</module>
         <module>wms-shop</module>
+        <module>wms-storage</module>
     </modules>
 
     <packaging>pom</packaging>

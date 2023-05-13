@@ -1,12 +1,11 @@
 package com.tjut.shop.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.tjut.resp.WmsResp;
+import com.tjut.common.resp.WmsResp;
 import com.tjut.shop.model.po.MdGoods;
 import com.tjut.shop.model.vo.GoodParam;
 import com.tjut.shop.model.vo.PageParam;
 
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**

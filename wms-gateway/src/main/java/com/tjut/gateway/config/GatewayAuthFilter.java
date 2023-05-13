@@ -1,12 +1,11 @@
 package com.tjut.gateway.config;
 
 import com.alibaba.fastjson.JSON;
-import com.tjut.auth.model.UserDto;
+import com.tjut.common.model.UserDto;
 
-import com.tjut.redis.RedisKey;
+import com.tjut.common.redis.RedisKey;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;

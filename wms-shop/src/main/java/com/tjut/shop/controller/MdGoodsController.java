@@ -1,16 +1,12 @@
 package com.tjut.shop.controller;
 
-import com.alibaba.excel.EasyExcel;
-import com.alibaba.excel.support.ExcelTypeEnum;
-import com.tjut.resp.WmsResp;
+import com.tjut.common.resp.WmsResp;
 import com.tjut.shop.model.po.MdGoods;
 import com.tjut.shop.model.vo.GoodParam;
 import com.tjut.shop.model.vo.PageParam;
 import com.tjut.shop.mq.MessageSender;
 import com.tjut.shop.mq.MqQueueConfig;
-import com.tjut.shop.service.MdCusService;
 import com.tjut.shop.service.MdGoodsService;
-import com.tjut.shop.util.DataListener;
 import com.tjut.shop.util.ExcelUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -24,8 +20,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.Arrays;
 import java.util.List;
 

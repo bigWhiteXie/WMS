@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: storage-service
+  cloud:
+    nacos:
+      server-addr: 117.50.181.29:8845
+      discovery:
+        namespace: 8df6f5ae-8b74-489f-a12b-24ea38813342
+        group: wms-project
+      config:
+        namespace: 8df6f5ae-8b74-489f-a12b-24ea38813342
+        group: wms-project
+        file-extension: yaml
+        refresh-enabled: true
+        shared-configs:
+          - data-id: redis-${spring.profiles.active}.yaml
+            group: wms-project
+            refresh: true
+          - data-id: mq-${spring.profiles.active}.yaml
+            group: wms-project
+            refresh: true
+
+  profiles:
+    active: dev

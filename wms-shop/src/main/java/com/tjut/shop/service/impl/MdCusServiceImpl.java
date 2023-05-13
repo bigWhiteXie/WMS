@@ -4,7 +4,7 @@ import com.alibaba.cloud.commons.lang.StringUtils;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.tjut.resp.WmsResp;
+import com.tjut.common.resp.WmsResp;
 import com.tjut.shop.mapper.MdCusMapper;
 import com.tjut.shop.model.po.MdCus;
 import com.tjut.shop.model.vo.CusParam;

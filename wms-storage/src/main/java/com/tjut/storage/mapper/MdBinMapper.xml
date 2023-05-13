@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tjut.storage.mapper.MdBinMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.tjut.storage.model.po.MdBin">
+        <id column="id" property="id" />
+        <result column="create_name" property="createName" />
+        <result column="create_by" property="createBy" />
+        <result column="create_date" property="createDate" />
+        <result column="update_name" property="updateName" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_date" property="updateDate" />
+        <result column="sys_org_code" property="sysOrgCode" />
+        <result column="sys_company_code" property="sysCompanyCode" />
+        <result column="ku_wei_ming_cheng" property="kuWeiMingCheng" />
+        <result column="ku_wei_bian_ma" property="kuWeiBianMa" />
+        <result column="ku_wei_tiao_ma" property="kuWeiTiaoMa" />
+        <result column="ku_wei_lei_xing" property="kuWeiLeiXing" />
+        <result column="ku_wei_shu_xing" property="kuWeiShuXing" />
+        <result column="shang_jia_ci_xu" property="shangJiaCiXu" />
+        <result column="qu_huo_ci_xu" property="quHuoCiXu" />
+        <result column="ti_ji_dan_wei" property="tiJiDanWei" />
+        <result column="zhong_liang_dan_wei" property="zhongLiangDanWei" />
+        <result column="zui_da_ti_ji" property="zuiDaTiJi" />
+        <result column="zui_da_zhong_liang" property="zuiDaZhongLiang" />
+        <result column="zui_da_tuo_pan" property="zuiDaTuoPan" />
+        <result column="chang" property="chang" />
+        <result column="kuan" property="kuan" />
+        <result column="gao" property="gao" />
+        <result column="ting_yong" property="tingYong" />
+        <result column="bin_store" property="binStore" />
+        <result column="goods_type" property="goodsType" />
+        <result column="use_volume" property="useVolume" />
+        <result column="use_weight" property="useWeight" />
+        <result column="good_name" property="goodName" />
+        <result column="good_code" property="goodCode" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, create_name, create_by, create_date, update_name, update_by, update_date, sys_org_code, sys_company_code, ku_wei_ming_cheng, ku_wei_bian_ma, ku_wei_tiao_ma, ku_wei_lei_xing, ku_wei_shu_xing, shang_jia_ci_xu, qu_huo_ci_xu, ti_ji_dan_wei, zhong_liang_dan_wei, zui_da_ti_ji, zui_da_zhong_liang, zui_da_tuo_pan, chang, kuan, gao, ting_yong, bin_store, goods_type, use_volume, use_weight, good_name, good_code
+    </sql>
+
+</mapper>

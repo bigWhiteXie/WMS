@@ -1,7 +1,7 @@
 package com.tjut.authBase.util;
 
 import com.alibaba.fastjson.JSON;
-import com.tjut.auth.model.UserDto;
+import com.tjut.common.model.UserDto;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 public class UserHolder {

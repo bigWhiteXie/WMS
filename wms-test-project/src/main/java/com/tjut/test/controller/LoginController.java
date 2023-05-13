@@ -1,13 +1,9 @@
 package com.tjut.test.controller;
 
 
-import com.tjut.auth.model.UserDto;
+import com.tjut.common.model.UserDto;
 import com.tjut.authBase.util.UserHolder;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

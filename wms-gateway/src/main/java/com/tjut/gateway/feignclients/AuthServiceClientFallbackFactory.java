@@ -1,11 +1,10 @@
 package com.tjut.gateway.feignclients;
 
-import com.tjut.resp.WmsResp;
+import com.tjut.common.resp.WmsResp;
 import feign.hystrix.FallbackFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.multipart.MultipartFile;
 
 /**
  * @author codeXie
